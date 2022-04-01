@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Camera/CameraShakeBase.h"
 #include "PawnBase.generated.h"
 
 class UCapsuleComponent;
@@ -42,7 +43,7 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Effects")
 		USoundBase* DeathSound;
 	UPROPERTY(EditAnywhere, Category = "Effects")
-		TSubclassOf<UMatineeCameraShake> DeathShake;
+		TSubclassOf<UCameraShakeBase> DeathShake;
 
 
 protected:
